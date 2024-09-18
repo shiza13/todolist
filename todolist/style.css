@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+    font-family:'Times New Roman', Times, serif;
+    
+        background-image: url('pic/background.jpg');
+        background-size: contain; /* Ensurehe image covers the entire background */
+        background-position: center; 
+        background-repeat: no-repeat; 
+    
+        height: 100vh; 
+        margin: 0; 
+     
+    
+}
+ .container{
+    outline-width: 10px;
+    outline-color: black;
+    width: 360px;
+    padding: 33px;
+    text-align: center;
+    background-color:rgb(255, 251, 5);
+    margin-left: 33%;
+    margin-top: 5px;
+    border-color: black;
+    border-radius: 30px;
+ }
+ input{
+    width: 270px;
+    padding: 8px;
+    border: 2px solid rgb(243, 34, 208);
+    outline: none;
+    font-size: 19px;
+     color:red;
+
+ }
+ button{
+    width: 60px;
+    height: 41px;
+    background-color: rgb(4, 29, 29);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    outline: none;
+    border-radius: 2px;
+    font-size: 19px;
+ }
+ .text ul{
+    position: relative;
+    background-color: rgb(80, 255, 80);
+    color: red;
+    font-size: 19px;
+    padding: 7px;
+    text-align: left;
+     
+ }
+ .text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+ }
+/* Style for the task container (ul) */
+ul {
+    position: relative; /* Enable positioning for the buttons */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: lightgreen;
+    margin: 5px 0;
+    list-style: none; /* Remove bullet points */
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Circular button styles for completion */
+.complete-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+    position: absolute; /* Float the button */
+    right: 40px; /* Add space between the trash icon and complete button */
+    transition: background-color 0.3s;
+}
+
+/* Change color when the task is marked completed */
+.complete-btn.completed {
+    background-color: green; /* Change color to green when completed */
+}
+
+/* Style for the delete (trash) icon */
+ul i {
+    position: absolute; /* Float the trash icon */
+    right: 10px; /* Keep the trash icon at the far right */
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
